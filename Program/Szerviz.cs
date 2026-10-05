@@ -6,7 +6,7 @@ namespace Program
 {
     public class Szerviz
     {
-        private List<Jarmu> jarmuvek;
+        private List<Jarmu> jarmuvek = new List<Jarmu>();
 
        
 
@@ -25,7 +25,7 @@ namespace Program
         }
         public void CsoportosSzerviz(int dij)
         {
-            foreach (var jarmu in jarmuvek)
+            foreach (Jarmu jarmu in jarmuvek)
             {
                 if (jarmu.SzervizSzukseges)
                 {

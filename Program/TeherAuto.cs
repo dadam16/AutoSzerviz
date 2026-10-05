@@ -10,7 +10,7 @@ namespace Program
 
         public TeherAuto(string rendszam, int kor, int kilometerOra, int uzemanyagSzint, int rakomany) : base(rendszam, kor, kilometerOra, uzemanyagSzint)
         {
-            this.rakomany = rakomany;
+            this.Rakomany = rakomany;
         }
 
         public int Rakomany { get => rakomany;
@@ -37,7 +37,7 @@ namespace Program
         }
         public override void Szervizel(int dij)
         {
-            
+            rakomany = 0;
             base.Szervizel(dij);
         }
     }

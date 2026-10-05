@@ -18,7 +18,7 @@ namespace Program
                 if(value < 0)
                 {
                     akkumulatorSzint = 0;
-                }else if (value < 100)
+                }else if (value > 100)
                 {
                     akkumulatorSzint = 100;
                 }
@@ -37,8 +37,8 @@ namespace Program
             if (dij > 100000)
             {
                 this.KilometerOra -= 10000;
-                this.akkumulatorSzint += 20;
             }
+            this.AkkumulatorSzint += 20;
             Console.WriteLine("A jármű szervízelése megtörtént");
         }
     }
